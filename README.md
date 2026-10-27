@@ -2,7 +2,7 @@
 
 # ✨ Varaq
 
-### Bilingual resume builder — Persian by default, English when you need it
+### Bilingual resume builder. Persian by default, English when you need it.
 
 [![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
@@ -36,6 +36,7 @@
 <td width="50%">
 
 ### 📝 Editor
+
 - Personal info, summary, experience, education, and skills
 - Validation and auto-save in the browser
 - Several resumes: create, duplicate, and delete
@@ -45,6 +46,7 @@
 <td width="50%">
 
 ### 🌐 Language
+
 - Interface language: Persian or English, saved in settings
 - Resume language is separate, so a Persian UI can edit an English resume
 - Vazirmatn for Persian, Inter and other typefaces for English
@@ -56,6 +58,7 @@
 <td width="50%">
 
 ### 🎨 Preview and export
+
 - Modern, Professional, and Minimalist templates
 - Live preview, zoom, font family, and font size
 - A4 PDF export
@@ -65,6 +68,7 @@
 <td width="50%">
 
 ### ✍️ Writing help (optional)
+
 - Improve a summary or a bullet
 - ATS compatibility check
 - Match a resume against a job description
@@ -79,16 +83,16 @@
 
 ## 🛠️ Tech Stack
 
-| Category | Technologies |
-|---|---|
-| **Framework** | Next.js 16, React 19, TypeScript 5 |
-| **Styling** | Tailwind CSS 4, Radix UI, Lucide Icons |
-| **State** | Zustand, React Hook Form, Zod |
-| **Animation** | Motion |
-| **Writing help** | OpenAI and Google Gemini REST APIs |
-| **Storage** | LocalForage, browser localStorage |
-| **Export** | html2canvas, jsPDF, docx |
-| **Tooling** | ESLint, Prettier, Husky |
+| Category         | Technologies                           |
+| ---------------- | -------------------------------------- |
+| **Framework**    | Next.js 16, React 19, TypeScript 5     |
+| **Styling**      | Tailwind CSS 4, Radix UI, Lucide Icons |
+| **State**        | Zustand, React Hook Form, Zod          |
+| **Animation**    | Motion                                 |
+| **Writing help** | OpenAI and Google Gemini REST APIs     |
+| **Storage**      | LocalForage, browser localStorage      |
+| **Export**       | html2canvas, jsPDF, docx               |
+| **Tooling**      | ESLint, Prettier, Husky                |
 
 ---
 
@@ -160,33 +164,16 @@ auto-resume/
 
 ## 📜 Available Scripts
 
-| Script | Description |
-|---|---|
-| `pnpm dev` | Start the development server |
-| `pnpm build` | Production build |
-| `pnpm start` | Run the production server |
-| `pnpm lint` | ESLint |
-| `pnpm format` | Format with Prettier |
-| `pnpm format:check` | Check formatting |
-| `pnpm test` | Dictionary and locale checks |
-| `pnpm verify:ai` | One live provider request, if a key is set in the shell |
-
----
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a branch (`git checkout -b feature/my-change`)
-3. Commit your changes
-4. Push and open a pull request
-
-Ideas that are still open: more templates, offline install as a PWA, and broader automated tests.
-
----
-
-## 📄 License
-
-MIT — see [LICENSE](LICENSE).
+| Script              | Description                                             |
+| ------------------- | ------------------------------------------------------- |
+| `pnpm dev`          | Start the development server                            |
+| `pnpm build`        | Production build                                        |
+| `pnpm start`        | Run the production server                               |
+| `pnpm lint`         | ESLint                                                  |
+| `pnpm format`       | Format with Prettier                                    |
+| `pnpm format:check` | Check formatting                                        |
+| `pnpm test`         | Dictionary and locale checks                            |
+| `pnpm verify:ai`    | One live provider request, if a key is set in the shell |
 
 ---
 
@@ -195,8 +182,6 @@ MIT — see [LICENSE](LICENSE).
 If Varaq is useful, a star on GitHub helps other people find it.
 
 <div align="center">
-
-**Built with ❤️ by [holymaiden](https://github.com/holymaiden)**
 
 [⬆ Back to Top](#-varaq)
 
