@@ -1,0 +1,80 @@
+import type { AppLocale } from '@/lib/i18n/locale'
+
+export const resumeCopy = {
+  fa: {
+    yourName: 'نام شما',
+    contact: 'اطلاعات تماس',
+    skills: 'مهارت‌ها',
+    education: 'تحصیلات',
+    summary: 'خلاصه حرفه‌ای',
+    experience: 'سوابق کاری',
+    workExperience: 'سوابق شغلی',
+    present: 'تاکنون',
+    at: 'در',
+    inField: 'در',
+    gpa: 'معدل',
+    placeholders: {
+      fullName: 'مثلاً سارا محمدی',
+      jobTitle: 'مثلاً توسعه‌دهنده ارشد فرانت‌اند',
+      email: 'name@example.com',
+      phone: '09123456789',
+      location: 'تهران',
+      website: 'https://example.com',
+      linkedin: 'linkedin.com/in/username',
+      summary: 'در چند جمله، تخصص، سال‌های تجربه و مهم‌ترین دستاوردهای خود را بنویسید...',
+      position: 'توسعه‌دهنده نرم‌افزار',
+      company: 'نام شرکت',
+      expLocation: 'تهران',
+      startDate: 'فروردین ۱۴۰۲',
+      endDate: 'اسفند ۱۴۰۳',
+      bullet: 'یک دستاورد یا مسئولیت را بنویسید...',
+      institution: 'دانشگاه تهران',
+      degree: 'کارشناسی',
+      field: 'مهندسی کامپیوتر',
+      gpa: '۱۷٫۵',
+      eduStart: 'مهر ۱۳۹۷',
+      eduEnd: 'خرداد ۱۴۰۱',
+      eduDescription: 'دروس مرتبط، دستاوردها یا فعالیت‌ها...',
+      skill: 'مثلاً React، پایتون، مدیریت تیم...'
+    }
+  },
+  en: {
+    yourName: 'Your Name',
+    contact: 'Contact',
+    skills: 'Skills',
+    education: 'Education',
+    summary: 'Professional Summary',
+    experience: 'Experience',
+    workExperience: 'Work Experience',
+    present: 'Present',
+    at: 'at',
+    inField: 'in',
+    gpa: 'GPA',
+    placeholders: {
+      fullName: 'John Doe',
+      jobTitle: 'Senior Software Engineer',
+      email: 'john@example.com',
+      phone: '+1 (555) 123-4567',
+      location: 'San Francisco, CA',
+      website: 'https://johndoe.com',
+      linkedin: 'linkedin.com/in/johndoe',
+      summary: 'A short summary of your strengths, experience, and what you want to do next...',
+      position: 'Software Engineer',
+      company: 'Google',
+      expLocation: 'Mountain View, CA',
+      startDate: 'Jan 2022',
+      endDate: 'Dec 2023',
+      bullet: 'Describe an achievement or responsibility...',
+      institution: 'MIT',
+      degree: 'Bachelor of Science',
+      field: 'Computer Science',
+      gpa: '3.8/4.0',
+      eduStart: 'Sep 2018',
+      eduEnd: 'May 2022',
+      eduDescription: 'Relevant coursework, achievements, activities...',
+      skill: 'e.g. React, Python, Leadership...'
+    }
+  }
+} as const satisfies Record<AppLocale, Record<string, unknown>>
+
+export type ResumeCopy = (typeof resumeCopy)['en']

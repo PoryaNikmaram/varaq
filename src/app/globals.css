@@ -1,0 +1,149 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --font-sans: var(--font-vazirmatn), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'Geist Mono', ui-monospace, monospace;
+
+  --radius-sm: 0.1rem;
+  --radius-md: 0.2rem;
+  --radius-lg: 0.3rem;
+  --radius-xl: 0.4rem;
+
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+
+  --color-background: oklch(0.145 0 0);
+  --color-foreground: oklch(0.95 0 0);
+  --color-card: oklch(0.178 0.005 285);
+  --color-card-foreground: oklch(0.95 0 0);
+  --color-popover: oklch(0.178 0.005 285);
+  --color-popover-foreground: oklch(0.95 0 0);
+  --color-primary: oklch(0.65 0.19 280);
+  --color-primary-foreground: oklch(0.98 0 0);
+  --color-secondary: oklch(0.25 0.01 280);
+  --color-secondary-foreground: oklch(0.9 0 0);
+  --color-muted: oklch(0.25 0.005 280);
+  --color-muted-foreground: oklch(0.6 0.01 280);
+  --color-accent: oklch(0.28 0.02 280);
+  --color-accent-foreground: oklch(0.95 0 0);
+  --color-destructive: oklch(0.55 0.2 25);
+  --color-destructive-foreground: oklch(0.98 0 0);
+  --color-border: oklch(0.28 0.01 280);
+  --color-input: oklch(0.28 0.01 280);
+  --color-ring: oklch(0.65 0.19 280);
+
+  --color-sidebar: oklch(0.16 0.005 285);
+  --color-sidebar-foreground: oklch(0.9 0 0);
+  --color-sidebar-border: oklch(0.25 0.01 280);
+}
+
+@keyframes accordion-down {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+
+@keyframes accordion-up {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-vazirmatn), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html[dir='ltr'] body {
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+html[dir='rtl'] .tracking-tight {
+  letter-spacing: 0;
+}
+
+html[dir='rtl'] input,
+html[dir='rtl'] button,
+html[dir='rtl'] textarea,
+html[dir='rtl'] select {
+  line-height: 1.5;
+}
+
+input[dir='rtl']::placeholder,
+textarea[dir='rtl']::placeholder {
+  text-align: right;
+  direction: rtl;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: oklch(0.35 0.01 280);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: oklch(0.45 0.02 280);
+}
+
+.a4-page {
+  width: 210mm;
+  min-height: 297mm;
+  background: white;
+  color: #1a1a2e;
+  font-family: var(--font-vazirmatn), var(--font-inter), sans-serif;
+  overflow: visible;
+}
+
+.a4-page .resume-ltr {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+@media print {
+  body {
+    background: white;
+  }
+
+  .a4-page {
+    box-shadow: none;
+    border: none;
+    break-after: page;
+  }
+}
+
+::selection {
+  background: oklch(0.65 0.19 280 / 0.3);
+  color: oklch(0.98 0 0);
+}
+
+:focus-visible {
+  outline: 1px solid var(--color-ring);
+  outline-offset: 1px;
+}
