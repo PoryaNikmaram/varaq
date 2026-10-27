@@ -12,7 +12,7 @@
 
 **Varaq** is an open-source resume builder with a Persian (fa-IR) interface, full RTL layout, and an English mode you can switch to at any time. Live preview, three templates, PDF and DOCX export, and optional writing help all run in the browser.
 
-[🚀 Live Demo](https://auto-resume-eight.vercel.app) · [📖 Documentation](#usage) · [🐛 Report Bug](../../issues) · [💡 Request Feature](../../issues)
+[🚀 Live Demo](https://varaq-six.vercel.app/) · [📖 Documentation](#usage) · [🐛 Report Bug](../../issues) · [💡 Request Feature](../../issues)
 
 </div>
 
